@@ -14,6 +14,12 @@
 		301D7EE521B7C8C40050C283 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7EE421B7C8C40050C283 /* main.m */; };
 		301D7EF021B7C8C40050C283 /* ZBSnippetToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7EEF21B7C8C40050C283 /* ZBSnippetToolsTests.m */; };
 		301D7EFB21B7C8C40050C283 /* ZBSnippetToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7EFA21B7C8C40050C283 /* ZBSnippetToolsUITests.m */; };
+		301D7F2821B7CEA10050C283 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301D7F0E21B7C8FC0050C283 /* Cocoa.framework */; };
+		301D7F2C21B7CEA10050C283 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F2B21B7CEA10050C283 /* SourceEditorExtension.m */; };
+		301D7F2F21B7CEA10050C283 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F2E21B7CEA10050C283 /* SourceEditorCommand.m */; };
+		301D7F3421B7CEA10050C283 /* ZBSnippet.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 301D7F2721B7CEA10050C283 /* ZBSnippet.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		301D7F5421B7CFD00050C283 /* ZBPerpotyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F5321B7CFD00050C283 /* ZBPerpotyCommand.m */; };
+		301D7F5721B7D0500050C283 /* ZBCodeBufferTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = 301D7ED421B7C8C30050C283;
 			remoteInfo = ZBSnippetTools;
 		};
+		301D7F3221B7CEA10050C283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301D7ECD21B7C8C30050C283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301D7F2621B7CEA10050C283;
+			remoteInfo = ZBSnippet;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		301D7F1F21B7C8FC0050C283 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				301D7F3421B7CEA10050C283 /* ZBSnippet.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		301D7ED521B7C8C30050C283 /* ZBSnippetTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBSnippetTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +77,18 @@
 		301D7EF621B7C8C40050C283 /* ZBSnippetToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZBSnippetToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		301D7EFA21B7C8C40050C283 /* ZBSnippetToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBSnippetToolsUITests.m; sourceTree = "<group>"; };
 		301D7EFC21B7C8C40050C283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301D7F0E21B7C8FC0050C283 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		301D7F2721B7CEA10050C283 /* ZBSnippet.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZBSnippet.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		301D7F2A21B7CEA10050C283 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		301D7F2B21B7CEA10050C283 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		301D7F2D21B7CEA10050C283 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		301D7F2E21B7CEA10050C283 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		301D7F3021B7CEA10050C283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301D7F3121B7CEA10050C283 /* ZBSnippet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZBSnippet.entitlements; sourceTree = "<group>"; };
+		301D7F5221B7CFD00050C283 /* ZBPerpotyCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBPerpotyCommand.h; sourceTree = "<group>"; };
+		301D7F5321B7CFD00050C283 /* ZBPerpotyCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBPerpotyCommand.m; sourceTree = "<group>"; };
+		301D7F5521B7D0500050C283 /* ZBCodeBufferTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCodeBufferTools.h; sourceTree = "<group>"; };
+		301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCodeBufferTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +113,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		301D7F2421B7CEA10050C283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301D7F2821B7CEA10050C283 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +130,8 @@
 				301D7ED721B7C8C30050C283 /* ZBSnippetTools */,
 				301D7EEE21B7C8C40050C283 /* ZBSnippetToolsTests */,
 				301D7EF921B7C8C40050C283 /* ZBSnippetToolsUITests */,
+				301D7F2921B7CEA10050C283 /* ZBSnippet */,
+				301D7F0D21B7C8FC0050C283 /* Frameworks */,
 				301D7ED621B7C8C30050C283 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +142,7 @@
 				301D7ED521B7C8C30050C283 /* ZBSnippetTools.app */,
 				301D7EEB21B7C8C40050C283 /* ZBSnippetToolsTests.xctest */,
 				301D7EF621B7C8C40050C283 /* ZBSnippetToolsUITests.xctest */,
+				301D7F2721B7CEA10050C283 /* ZBSnippet.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +181,47 @@
 			path = ZBSnippetToolsUITests;
 			sourceTree = "<group>";
 		};
+		301D7F0D21B7C8FC0050C283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				301D7F0E21B7C8FC0050C283 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301D7F2921B7CEA10050C283 /* ZBSnippet */ = {
+			isa = PBXGroup;
+			children = (
+				301D7F3921B7CEF20050C283 /* perpoty */,
+				301D7F3821B7CEF20050C283 /* UICode */,
+				301D7F2A21B7CEA10050C283 /* SourceEditorExtension.h */,
+				301D7F2B21B7CEA10050C283 /* SourceEditorExtension.m */,
+				301D7F2D21B7CEA10050C283 /* SourceEditorCommand.h */,
+				301D7F2E21B7CEA10050C283 /* SourceEditorCommand.m */,
+				301D7F3021B7CEA10050C283 /* Info.plist */,
+				301D7F3121B7CEA10050C283 /* ZBSnippet.entitlements */,
+				301D7F5521B7D0500050C283 /* ZBCodeBufferTools.h */,
+				301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */,
+			);
+			path = ZBSnippet;
+			sourceTree = "<group>";
+		};
+		301D7F3821B7CEF20050C283 /* UICode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICode;
+			sourceTree = "<group>";
+		};
+		301D7F3921B7CEF20050C283 /* perpoty */ = {
+			isa = PBXGroup;
+			children = (
+				301D7F5221B7CFD00050C283 /* ZBPerpotyCommand.h */,
+				301D7F5321B7CFD00050C283 /* ZBPerpotyCommand.m */,
+			);
+			path = perpoty;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +232,12 @@
 				301D7ED121B7C8C30050C283 /* Sources */,
 				301D7ED221B7C8C30050C283 /* Frameworks */,
 				301D7ED321B7C8C30050C283 /* Resources */,
+				301D7F1F21B7C8FC0050C283 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				301D7F3321B7CEA10050C283 /* PBXTargetDependency */,
 			);
 			name = ZBSnippetTools;
 			productName = ZBSnippetTools;
@@ -187,6 +280,23 @@
 			productReference = 301D7EF621B7C8C40050C283 /* ZBSnippetToolsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		301D7F2621B7CEA10050C283 /* ZBSnippet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301D7F3521B7CEA10050C283 /* Build configuration list for PBXNativeTarget "ZBSnippet" */;
+			buildPhases = (
+				301D7F2321B7CEA10050C283 /* Sources */,
+				301D7F2421B7CEA10050C283 /* Frameworks */,
+				301D7F2521B7CEA10050C283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBSnippet;
+			productName = ZBSnippet;
+			productReference = 301D7F2721B7CEA10050C283 /* ZBSnippet.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +317,9 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 301D7ED421B7C8C30050C283;
 					};
+					301D7F2621B7CEA10050C283 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = 301D7ED021B7C8C30050C283 /* Build configuration list for PBXProject "ZBSnippetTools" */;
@@ -225,6 +338,7 @@
 				301D7ED421B7C8C30050C283 /* ZBSnippetTools */,
 				301D7EEA21B7C8C40050C283 /* ZBSnippetToolsTests */,
 				301D7EF521B7C8C40050C283 /* ZBSnippetToolsUITests */,
+				301D7F2621B7CEA10050C283 /* ZBSnippet */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +361,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		301D7EF421B7C8C40050C283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301D7F2521B7CEA10050C283 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,6 +403,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		301D7F2321B7CEA10050C283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301D7F5721B7D0500050C283 /* ZBCodeBufferTools.m in Sources */,
+				301D7F2C21B7CEA10050C283 /* SourceEditorExtension.m in Sources */,
+				301D7F5421B7CFD00050C283 /* ZBPerpotyCommand.m in Sources */,
+				301D7F2F21B7CEA10050C283 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,6 +426,11 @@
 			isa = PBXTargetDependency;
 			target = 301D7ED421B7C8C30050C283 /* ZBSnippetTools */;
 			targetProxy = 301D7EF721B7C8C40050C283 /* PBXContainerItemProxy */;
+		};
+		301D7F3321B7CEA10050C283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 301D7F2621B7CEA10050C283 /* ZBSnippet */;
+			targetProxy = 301D7F3221B7CEA10050C283 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -530,6 +667,44 @@
 			};
 			name = Release;
 		};
+		301D7F3621B7CEA10050C283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZBSnippet/ZBSnippet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 86LSCQAD57;
+				INFOPLIST_FILE = ZBSnippet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzb.ZBSnippetTools.ZBSnippet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		301D7F3721B7CEA10050C283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZBSnippet/ZBSnippet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 86LSCQAD57;
+				INFOPLIST_FILE = ZBSnippet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xzb.ZBSnippetTools.ZBSnippet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -565,6 +740,15 @@
 			buildConfigurations = (
 				301D7F0621B7C8C40050C283 /* Debug */,
 				301D7F0721B7C8C40050C283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301D7F3521B7CEA10050C283 /* Build configuration list for PBXNativeTarget "ZBSnippet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301D7F3621B7CEA10050C283 /* Debug */,
+				301D7F3721B7CEA10050C283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
