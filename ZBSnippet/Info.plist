@@ -36,6 +36,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>ZBAddImport</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorAutoImpCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SourceEditorAutoImpCommand</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>StringToImplementation</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>

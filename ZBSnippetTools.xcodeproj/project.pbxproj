@@ -18,8 +18,8 @@
 		301D7F2C21B7CEA10050C283 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F2B21B7CEA10050C283 /* SourceEditorExtension.m */; };
 		301D7F2F21B7CEA10050C283 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F2E21B7CEA10050C283 /* SourceEditorCommand.m */; };
 		301D7F3421B7CEA10050C283 /* ZBSnippet.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 301D7F2721B7CEA10050C283 /* ZBSnippet.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		301D7F5421B7CFD00050C283 /* ZBPerpotyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F5321B7CFD00050C283 /* ZBPerpotyCommand.m */; };
 		301D7F5721B7D0500050C283 /* ZBCodeBufferTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */; };
+		30E5492021C0D3D5003A8648 /* SourceEditorAutoImpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5491F21C0D3D5003A8648 /* SourceEditorAutoImpCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,10 +85,10 @@
 		301D7F2E21B7CEA10050C283 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
 		301D7F3021B7CEA10050C283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301D7F3121B7CEA10050C283 /* ZBSnippet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZBSnippet.entitlements; sourceTree = "<group>"; };
-		301D7F5221B7CFD00050C283 /* ZBPerpotyCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBPerpotyCommand.h; sourceTree = "<group>"; };
-		301D7F5321B7CFD00050C283 /* ZBPerpotyCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBPerpotyCommand.m; sourceTree = "<group>"; };
 		301D7F5521B7D0500050C283 /* ZBCodeBufferTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCodeBufferTools.h; sourceTree = "<group>"; };
 		301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCodeBufferTools.m; sourceTree = "<group>"; };
+		30E5491E21C0D3D5003A8648 /* SourceEditorAutoImpCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorAutoImpCommand.h; sourceTree = "<group>"; };
+		30E5491F21C0D3D5003A8648 /* SourceEditorAutoImpCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorAutoImpCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,34 +192,18 @@
 		301D7F2921B7CEA10050C283 /* ZBSnippet */ = {
 			isa = PBXGroup;
 			children = (
-				301D7F3921B7CEF20050C283 /* perpoty */,
-				301D7F3821B7CEF20050C283 /* UICode */,
-				301D7F2A21B7CEA10050C283 /* SourceEditorExtension.h */,
-				301D7F2B21B7CEA10050C283 /* SourceEditorExtension.m */,
+				301D7F3021B7CEA10050C283 /* Info.plist */,
+				30E5491E21C0D3D5003A8648 /* SourceEditorAutoImpCommand.h */,
+				30E5491F21C0D3D5003A8648 /* SourceEditorAutoImpCommand.m */,
 				301D7F2D21B7CEA10050C283 /* SourceEditorCommand.h */,
 				301D7F2E21B7CEA10050C283 /* SourceEditorCommand.m */,
-				301D7F3021B7CEA10050C283 /* Info.plist */,
-				301D7F3121B7CEA10050C283 /* ZBSnippet.entitlements */,
+				301D7F2A21B7CEA10050C283 /* SourceEditorExtension.h */,
+				301D7F2B21B7CEA10050C283 /* SourceEditorExtension.m */,
 				301D7F5521B7D0500050C283 /* ZBCodeBufferTools.h */,
 				301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */,
+				301D7F3121B7CEA10050C283 /* ZBSnippet.entitlements */,
 			);
 			path = ZBSnippet;
-			sourceTree = "<group>";
-		};
-		301D7F3821B7CEF20050C283 /* UICode */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UICode;
-			sourceTree = "<group>";
-		};
-		301D7F3921B7CEF20050C283 /* perpoty */ = {
-			isa = PBXGroup;
-			children = (
-				301D7F5221B7CFD00050C283 /* ZBPerpotyCommand.h */,
-				301D7F5321B7CFD00050C283 /* ZBPerpotyCommand.m */,
-			);
-			path = perpoty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,9 +391,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E5492021C0D3D5003A8648 /* SourceEditorAutoImpCommand.m in Sources */,
 				301D7F5721B7D0500050C283 /* ZBCodeBufferTools.m in Sources */,
 				301D7F2C21B7CEA10050C283 /* SourceEditorExtension.m in Sources */,
-				301D7F5421B7CFD00050C283 /* ZBPerpotyCommand.m in Sources */,
 				301D7F2F21B7CEA10050C283 /* SourceEditorCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,9 +546,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZBSnippetTools/ZBSnippetTools.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 86LSCQAD57;
+				DEVELOPMENT_TEAM = K6V6G76QVS;
 				INFOPLIST_FILE = ZBSnippetTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -572,6 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xzb.ZBSnippetTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -580,9 +566,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZBSnippetTools/ZBSnippetTools.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 86LSCQAD57;
+				DEVELOPMENT_TEAM = K6V6G76QVS;
 				INFOPLIST_FILE = ZBSnippetTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,6 +577,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xzb.ZBSnippetTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -671,9 +659,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ZBSnippet/ZBSnippet.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 86LSCQAD57;
+				DEVELOPMENT_TEAM = K6V6G76QVS;
 				INFOPLIST_FILE = ZBSnippet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,6 +671,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xzb.ZBSnippetTools.ZBSnippet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -690,9 +680,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ZBSnippet/ZBSnippet.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 86LSCQAD57;
+				DEVELOPMENT_TEAM = K6V6G76QVS;
 				INFOPLIST_FILE = ZBSnippet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -701,6 +692,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xzb.ZBSnippetTools.ZBSnippet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
