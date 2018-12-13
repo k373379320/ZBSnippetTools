@@ -44,6 +44,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>StringToImplementation</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorEnumToSwitchCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SourceEditorEnumToSwitchCommand</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>EnumToSwitch</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>

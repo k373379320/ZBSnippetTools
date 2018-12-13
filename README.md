@@ -9,15 +9,43 @@ ZBSnippetTools
 
 
 
-# 功能1  快捷import
+### 功能1  快捷import
 
 选中文案->快捷 添加 import  
+
 会追加在顶部import最后一行;
 
-# 功能2  快捷Str->implementation
+### 功能2  快捷Str->implementation
 
 选中文案->快捷添加方法
 
 放到到当前选中文案的方法之下;
+
 如果当前选中不是方法,则在@end之上;
+
 如果选择的line,含有EventTouchUpInside,将全局搜索,定位到其他btn事件所在的位置之上;
+
+### 功能3  快捷Enum->Switch
+
+
+必须选中含有 "NS_ENUM" 或者 "NS_OPTIONS" 开始
+
+以 "}" 作为结束;
+
+
+```Objective-C
+typedef NS_ENUM(NSInteger, ZBAAAAType) {
+    ZBAAAATypePic,         //图文
+    ZBAAAATypeProduct,     //商品
+};
+    switch (<#expression#>) {
+        case ZBAAAATypePic:
+            <#statements#>
+            break;
+        case ZBAAAATypeProduct:
+            <#statements#>
+            break;
+        default:
+            break;
+    }
+```
