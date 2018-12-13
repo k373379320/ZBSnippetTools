@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -703,15 +704,176 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" misplaced="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="521"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WRo-Jg-vYk">
+                                <rect key="frame" x="308" y="470" width="218" height="36"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="ZBSnippetTools" id="tXJ-Zf-rPf">
+                                    <font key="font" metaFont="systemMedium" size="30"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <tabView translatesAutoresizingMaskIntoConstraints="NO" id="rtg-8V-lFr">
+                                <rect key="frame" x="43" y="40" width="748" height="416"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="JOc-Hk-7Mu"/>
+                                </constraints>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="Desc" identifier="" id="gVr-iO-zhy">
+                                        <view key="view" id="ag9-TK-CmI">
+                                            <rect key="frame" x="10" y="33" width="728" height="370"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mIn-gF-CQh">
+                                                    <rect key="frame" x="10" y="10" width="708" height="340"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Ugp-dF-Ns8">
+                                                        <font key="font" metaFont="system" size="14"/>
+                                                        <string key="title">1.跑起来后在工程的 Products 文件夹里看到 [ZBSnippetTools.app] 打开对应Finder
+2.将文件copy 到应用程序里面,run 一下
+3.在 [系统偏好设置] -&gt;扩展-&gt; [ZBSnippetTools] -&gt;[Xcode Source Editor] 选中
+4.重启Xcode ,打开-&gt;Key Bindings -&gt; 搜索 ZBAddImport 设置快捷键</string>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mIn-gF-CQh" firstAttribute="top" secondItem="ag9-TK-CmI" secondAttribute="top" constant="20" id="Cv3-V2-qVP"/>
+                                                <constraint firstItem="mIn-gF-CQh" firstAttribute="leading" secondItem="ag9-TK-CmI" secondAttribute="leading" constant="10" id="Fs1-de-r5d"/>
+                                                <constraint firstAttribute="bottom" secondItem="mIn-gF-CQh" secondAttribute="bottom" constant="10" id="Tbt-Xq-R5h"/>
+                                                <constraint firstAttribute="trailing" secondItem="mIn-gF-CQh" secondAttribute="trailing" constant="10" id="bQp-r4-TwY"/>
+                                            </constraints>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Str2Imp" identifier="" id="YTb-Fq-ECH">
+                                        <view key="view" misplaced="YES" id="AjP-im-e0L">
+                                            <rect key="frame" x="10" y="33" width="728" height="370"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9lD-Kb-vNV">
+                                                    <rect key="frame" x="10" y="10" width="708" height="131"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="rzY-qE-fHU">
+                                                        <font key="font" metaFont="system" size="14"/>
+                                                        <string key="title">选中文案-&gt;快捷添加方法
+
+放到到当前选中文案的方法之下;
+
+如果当前选中不是方法,则在@end之上;
+
+如果选择的line,含有EventTouchUpInside,将全局搜索,定位到其他btn事件所在的位置之上;</string>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9lD-Kb-vNV" firstAttribute="top" secondItem="AjP-im-e0L" secondAttribute="top" constant="20" id="FjJ-Jb-Y3F"/>
+                                                <constraint firstAttribute="trailing" secondItem="9lD-Kb-vNV" secondAttribute="trailing" constant="10" id="bw1-gh-xYv"/>
+                                                <constraint firstItem="9lD-Kb-vNV" firstAttribute="leading" secondItem="AjP-im-e0L" secondAttribute="leading" constant="10" id="eEI-09-NXM"/>
+                                                <constraint firstAttribute="bottom" secondItem="9lD-Kb-vNV" secondAttribute="bottom" constant="10" id="i91-HD-Sd9"/>
+                                            </constraints>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Enum2Switch" identifier="" id="d4V-O3-mgN">
+                                        <view key="view" misplaced="YES" id="pIL-qb-HPO">
+                                            <rect key="frame" x="10" y="33" width="728" height="370"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="US9-KN-ugq">
+                                                    <rect key="frame" x="10" y="10" width="708" height="329"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="JIV-WM-Lbb">
+                                                        <font key="font" metaFont="system" size="14"/>
+                                                        <mutableString key="title">必须选中含有 "NS_ENUM" 或者 "NS_OPTIONS" 开始
+
+以 "}" 作为结束;
+
+typedef NS_ENUM(NSInteger, ZBAAAAType) {
+    ZBAAAATypePic,         //图文
+    ZBAAAATypeProduct,     //商品
+};
+    switch (&lt;#expression#&gt;) {
+        case ZBAAAATypePic:
+            &lt;#statements#&gt;
+            break;
+        case ZBAAAATypeProduct:
+            &lt;#statements#&gt;
+            break;
+        default:
+            break;
+    }</mutableString>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="US9-KN-ugq" firstAttribute="leading" secondItem="pIL-qb-HPO" secondAttribute="leading" constant="10" id="BtU-By-ULz"/>
+                                                <constraint firstItem="US9-KN-ugq" firstAttribute="top" secondItem="pIL-qb-HPO" secondAttribute="top" constant="20" id="dc9-l3-9Yg"/>
+                                                <constraint firstAttribute="trailing" secondItem="US9-KN-ugq" secondAttribute="trailing" constant="10" id="trF-oa-6vP"/>
+                                                <constraint firstAttribute="bottom" secondItem="US9-KN-ugq" secondAttribute="bottom" constant="10" id="uLS-qt-xKE"/>
+                                            </constraints>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="AutoImport" identifier="" id="2Dl-Ah-eO6">
+                                        <view key="view" misplaced="YES" id="5Ud-Yx-IoH">
+                                            <rect key="frame" x="10" y="33" width="728" height="370"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KeA-Wy-FdM">
+                                                    <rect key="frame" x="10" y="10" width="708" height="95"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="JFo-Gd-SO6">
+                                                        <font key="font" metaFont="system" size="14"/>
+                                                        <string key="title">ZBPeopleOBject
+
+-&gt;
+
+#import "ZBPeopleOBject.h"</string>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="KeA-Wy-FdM" secondAttribute="bottom" constant="10" id="i2W-9Z-ZEJ"/>
+                                                <constraint firstItem="KeA-Wy-FdM" firstAttribute="leading" secondItem="5Ud-Yx-IoH" secondAttribute="leading" constant="10" id="kGv-Gj-E3g"/>
+                                                <constraint firstItem="KeA-Wy-FdM" firstAttribute="top" secondItem="5Ud-Yx-IoH" secondAttribute="top" constant="20" id="mrJ-Gf-Rr4"/>
+                                                <constraint firstAttribute="trailing" secondItem="KeA-Wy-FdM" secondAttribute="trailing" constant="10" id="veW-Pn-bfh"/>
+                                            </constraints>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S9F-mZ-soI">
+                                <rect key="frame" x="384" y="3" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xkG-dS-3FB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="quitBtnClick:" target="XfG-lQ-9wD" id="Rs0-vk-mbX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="S9F-mZ-soI" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="DKg-3q-LDD"/>
+                            <constraint firstAttribute="trailing" secondItem="rtg-8V-lFr" secondAttribute="trailing" constant="50" id="OPN-br-gh9"/>
+                            <constraint firstAttribute="bottom" secondItem="S9F-mZ-soI" secondAttribute="bottom" constant="10" id="STT-GH-7D1"/>
+                            <constraint firstItem="rtg-8V-lFr" firstAttribute="top" secondItem="WRo-Jg-vYk" secondAttribute="bottom" constant="20" id="TLp-PI-e1v"/>
+                            <constraint firstItem="WRo-Jg-vYk" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="czx-yP-BYh"/>
+                            <constraint firstAttribute="bottom" secondItem="rtg-8V-lFr" secondAttribute="bottom" constant="50" id="iE0-1Q-BWJ"/>
+                            <constraint firstItem="rtg-8V-lFr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="50" id="jql-RE-P9d"/>
+                            <constraint firstItem="WRo-Jg-vYk" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="30" id="trg-fl-Ac0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="219" y="791.5"/>
         </scene>
     </scenes>
 </document>

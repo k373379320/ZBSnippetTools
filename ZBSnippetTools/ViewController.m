@@ -17,18 +17,12 @@
     
 }
 
-- (void)asdasd
+
+- (IBAction)quitBtnClick:(id)sender
 {
-
+    NSLog(@"exit");
+    
+    exit(0);
 }
-
-
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
-}
-
 
 @end
