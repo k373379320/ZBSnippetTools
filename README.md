@@ -15,6 +15,16 @@ ZBSnippetTools
 
 会追加在顶部import最后一行;
 
+```Objective-C
+
+ZBPeopleOBject
+
+->
+
+#import "ZBPeopleOBject.h"
+
+```
+
 ### 功能2  快捷Str->implementation
 
 选中文案->快捷添加方法
@@ -25,6 +35,25 @@ ZBSnippetTools
 
 如果选择的line,含有EventTouchUpInside,将全局搜索,定位到其他btn事件所在的位置之上;
 
+
+```
+[btn addTarget:self action:NSSelectorFromString(@"btnClick") forControlEvents:UIControlEventTouchUpInside];
+
+[btn addTarget:self action:@selector(btnClick:::) forControlEvents:UIControlEventTouchUpInside];
+
+
+- (void)btnClick:(id)arg1 arg2:(id)arg2 arg3:(id)arg3
+{
+
+}
+
+- (void)btnClick
+{
+
+}
+
+
+```
 ### 功能3  快捷Enum->Switch
 
 
