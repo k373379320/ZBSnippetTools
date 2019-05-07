@@ -54,6 +54,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>EnumToSwitch</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorAutoPropertyCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SourceEditorAutoPropertyCommand</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>AutoProperty</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>
