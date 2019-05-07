@@ -90,3 +90,19 @@ typedef NS_ENUM(NSInteger, ZBAAAAType) {
             break;
     }
 ```
+
+#### 功能4 自动补全property
+
+要求按照oc规范命名
+```
+
+@interface ViewController ()
+titleLabel
+->
+@property (nonatomic, strong) UILabel *titleLabel;
+@end
+
+```
+
+
+

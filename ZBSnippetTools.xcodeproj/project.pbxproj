@@ -18,8 +18,8 @@
 		301D7F2C21B7CEA10050C283 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F2B21B7CEA10050C283 /* SourceEditorExtension.m */; };
 		301D7F2F21B7CEA10050C283 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F2E21B7CEA10050C283 /* SourceEditorCommand.m */; };
 		301D7F3421B7CEA10050C283 /* ZBSnippet.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 301D7F2721B7CEA10050C283 /* ZBSnippet.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		301D7F5721B7D0500050C283 /* ZBCodeBufferTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */; };
 		3031841221C20B4900C98CEF /* SourceEditorEnumToSwitchCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3031841121C20B4900C98CEF /* SourceEditorEnumToSwitchCommand.m */; };
+		30C4EBEE228164C400F20E2D /* SourceEditorAutoPropertyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C4EBED228164C400F20E2D /* SourceEditorAutoPropertyCommand.m */; };
 		30E5492021C0D3D5003A8648 /* SourceEditorAutoImpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E5491F21C0D3D5003A8648 /* SourceEditorAutoImpCommand.m */; };
 /* End PBXBuildFile section */
 
@@ -86,10 +86,10 @@
 		301D7F2E21B7CEA10050C283 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
 		301D7F3021B7CEA10050C283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301D7F3121B7CEA10050C283 /* ZBSnippet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZBSnippet.entitlements; sourceTree = "<group>"; };
-		301D7F5521B7D0500050C283 /* ZBCodeBufferTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCodeBufferTools.h; sourceTree = "<group>"; };
-		301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCodeBufferTools.m; sourceTree = "<group>"; };
 		3031841021C20B4900C98CEF /* SourceEditorEnumToSwitchCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorEnumToSwitchCommand.h; sourceTree = "<group>"; };
 		3031841121C20B4900C98CEF /* SourceEditorEnumToSwitchCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorEnumToSwitchCommand.m; sourceTree = "<group>"; };
+		30C4EBEC228164C400F20E2D /* SourceEditorAutoPropertyCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorAutoPropertyCommand.h; sourceTree = "<group>"; };
+		30C4EBED228164C400F20E2D /* SourceEditorAutoPropertyCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorAutoPropertyCommand.m; sourceTree = "<group>"; };
 		30E5491E21C0D3D5003A8648 /* SourceEditorAutoImpCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorAutoImpCommand.h; sourceTree = "<group>"; };
 		30E5491F21C0D3D5003A8648 /* SourceEditorAutoImpCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorAutoImpCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,9 +204,9 @@
 				3031841121C20B4900C98CEF /* SourceEditorEnumToSwitchCommand.m */,
 				301D7F2A21B7CEA10050C283 /* SourceEditorExtension.h */,
 				301D7F2B21B7CEA10050C283 /* SourceEditorExtension.m */,
-				301D7F5521B7D0500050C283 /* ZBCodeBufferTools.h */,
-				301D7F5621B7D0500050C283 /* ZBCodeBufferTools.m */,
 				301D7F3121B7CEA10050C283 /* ZBSnippet.entitlements */,
+				30C4EBEC228164C400F20E2D /* SourceEditorAutoPropertyCommand.h */,
+				30C4EBED228164C400F20E2D /* SourceEditorAutoPropertyCommand.m */,
 			);
 			path = ZBSnippet;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 			files = (
 				3031841221C20B4900C98CEF /* SourceEditorEnumToSwitchCommand.m in Sources */,
 				30E5492021C0D3D5003A8648 /* SourceEditorAutoImpCommand.m in Sources */,
-				301D7F5721B7D0500050C283 /* ZBCodeBufferTools.m in Sources */,
+				30C4EBEE228164C400F20E2D /* SourceEditorAutoPropertyCommand.m in Sources */,
 				301D7F2C21B7CEA10050C283 /* SourceEditorExtension.m in Sources */,
 				301D7F2F21B7CEA10050C283 /* SourceEditorCommand.m in Sources */,
 			);
