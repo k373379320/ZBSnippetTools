@@ -9,7 +9,7 @@ ZBSnippetTools
 
 
 
-### 功能1  快捷import
+#### 功能1  快捷import
 
 选中文案->快捷 添加 import  
 
@@ -25,7 +25,7 @@ ZBPeopleOBject
 
 ```
 
-### 功能2  快捷Str->implementation
+#### 功能2  快捷Str->implementation
 
 选中文案->快捷添加方法
 
@@ -54,7 +54,7 @@ ZBPeopleOBject
 
 
 ```
-### 功能3  快捷Enum->Switch
+#### 功能3  快捷Enum->Switch
 
 
 必须选中含有 "NS_ENUM" 或者 "NS_OPTIONS" 开始
