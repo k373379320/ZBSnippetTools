@@ -26,6 +26,7 @@ ZBPeopleOBject
 ```
 
 选中含有"@implementation"关键字的字符串会对它进行声明extension
+```
 @implementation ViewController
 
 ->
@@ -35,7 +36,7 @@ ZBPeopleOBject
 @end
 
 @implementation ViewController
-
+```
 
 #### 功能2  快捷Str->implementation
 
