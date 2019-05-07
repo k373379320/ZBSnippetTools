@@ -24,6 +24,8 @@
 #endif
 
 @implementation SourceEditorEnumToSwitchCommand
+
+
 - (void)performCommandWithInvocation:(XCSourceEditorCommandInvocation *)invocation completionHandler:(void (^)(NSError *_Nullable nilOrError))completionHandler
 {
     
@@ -31,6 +33,7 @@
     
     NSArray *enumDatas = [self enumDatas];
     if (enumDatas.count == 0 ) {
+        completionHandler(nil);
         return;
     }
     //生成switch代码
