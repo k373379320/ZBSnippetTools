@@ -25,6 +25,18 @@ ZBPeopleOBject
 
 ```
 
+选中含有"@implementation"关键字的字符串会对它进行声明extension
+@implementation ViewController
+
+->
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+
 #### 功能2  快捷Str->implementation
 
 选中文案->快捷添加方法
